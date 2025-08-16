@@ -12,7 +12,7 @@ app.use(cors());
 
 app.use("/api/auth", require("./routes/authRoutes"));
 app.use("/api/employees", require("./routes/employee"));
-app.use("/api/todos", require("./routes/TodoRoutes"));
+app.use("/api/todos", require("./routes/todoRoutes"));
 
 app.get("/", (req, res) => {
   res.send("💻 CRUD API is running...");
